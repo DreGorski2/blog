@@ -1,0 +1,14 @@
+.container{
+    display:flex;
+    flex-direction: column;
+    width: 60vw;
+    margin: auto;
+    height: 60vh;
+    background: white;
+    align-items: center;
+    border: 5px solid black;
+    border-radius: 15px;
+    justify-content: center;
+    font-family: 'Krona One', sans-serif;
+ }
+

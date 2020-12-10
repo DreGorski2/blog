@@ -1,0 +1,200 @@
+.container{
+    display:grid;
+    width: 90vw;
+    margin: auto;
+    height: 100vh;
+    grid-template-areas:
+    "hd hd hd hd hd hd"
+    "main main main main main main"
+    "ct ct ct ct ct ct"
+    "ft ft ft ft ft ft";
+    grid-gap: 15px;
+    background: white;
+    align-self: center;
+    justify-content: center;
+    }
+
+/******************************/
+/******************************/
+/******** HEADER STYLES *******/
+/******************************/
+/******************************/
+
+.header{
+    grid-area:hd;
+    color: black;
+   }
+
+#nestedHeader{
+    display: grid;
+    font-family: 'Krona One', sans-serif;
+    grid-template-columns: 70% 10% 10% 10%;
+    color: black;
+    }
+
+
+.headerBox{
+    display: flex;
+    align-self: flex-end;
+    flex-direction: row;
+    color: black;
+}
+
+#company{
+    display: flex;
+    align-self: flex-start;
+    }
+
+
+/******************************/
+/******************************/
+/******** MAIN STYLES *********/
+/******************************/
+/******************************/
+
+.main_box_mountains{
+    height: 80vh;
+    grid-area:main;
+    background-image:url('images/mountains.jpg');
+    background-size: cover;
+    background-color: #fffff8;
+    justify-items: center;
+}
+
+.main_box_ocean{
+    height: 80vh;
+    grid-area:main;
+    background-image:url('images/ocean_2.jpg');
+    background-size: cover;
+    background-color: #fffff8;
+    justify-items: center;
+}
+
+.main_box_desert{
+    height: 80vh;
+    grid-area:main;
+    background-image:url('images/desert_2.jpg');
+    background-size: cover;
+    background-color: #fffff8;
+    justify-items: center;
+}
+
+
+
+/********************************/
+/********************************/
+/******** CONTENT STYLES ********/
+/********************************/
+/********************************/
+
+.content_box{
+    grid-area:ct;
+   }
+
+#nestedContent{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Krona One', sans-serif;
+    color: black;
+    align-items: center;
+}
+
+.summary{
+    width: 90vw;
+    display: grid;
+}
+
+
+/********************************/
+/********************************/
+/******** FOOTER STYLES ********/
+/********************************/
+/********************************/
+
+
+.footer{
+    grid-area:ft;
+}
+
+#nestedFooter{
+     display: flex;
+     flex-flow: row;
+     align-items: center;
+     font-family: 'Krona One', sans-serif;
+}
+
+.footerBox{
+     display: flex;
+     width: 30vw;
+     height: 10vh;
+     align-items: center;
+     justify-content: center;
+}
+
+#social_icons{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+/********************************/
+/********************************/
+/******** GLOBAL STYLES ********/
+/********************************/
+/********************************/
+
+.fa-user-circle{
+   font-size: 1.5em;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.fa-heart{
+    display: flex;
+    color: red;
+    font-size: 20px;
+    position: center;
+}
