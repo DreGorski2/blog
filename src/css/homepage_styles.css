@@ -1,3 +1,4 @@
+
 .container{
     display:grid;
     width: 90vw;
@@ -25,6 +26,7 @@
     color: black;
    }
 
+
 #nestedHeader{
     display: grid;
     font-family: 'Krona One', sans-serif;
@@ -32,19 +34,21 @@
     color: black;
     }
 
-
 .headerBox{
     display: flex;
     align-self: flex-end;
+    justify-content: center;
     flex-direction: row;
     color: black;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 2px;
 }
 
 #company{
     display: flex;
     align-self: flex-start;
-    }
-
+}
 
 /******************************/
 /******************************/
@@ -52,34 +56,24 @@
 /******************************/
 /******************************/
 
-.main_box_mountains{
+.main_box{
     height: 80vh;
     grid-area:main;
-    background-image:url('images/mountains.jpg');
+    display: grid;
+    background-image:url('../images/leafs.jpg');
     background-size: cover;
     background-color: #fffff8;
-    justify-items: center;
+    justify-content: center;
 }
 
-.main_box_ocean{
-    height: 80vh;
-    grid-area:main;
-    background-image:url('images/ocean_2.jpg');
-    background-size: cover;
-    background-color: #fffff8;
-    justify-items: center;
-}
-
-.main_box_desert{
-    height: 80vh;
-    grid-area:main;
-    background-image:url('images/desert_2.jpg');
-    background-size: cover;
-    background-color: #fffff8;
-    justify-items: center;
-}
-
-
+#title{
+        display: flex;
+         color: black;
+         justify-content: center;
+         align-items: center;
+         font-family: 'Krona One', sans-serif;
+         font-size: 6em;
+      }
 
 /********************************/
 /********************************/
@@ -99,11 +93,35 @@
     align-items: center;
 }
 
-.summary{
-    width: 90vw;
-    display: grid;
+.content_block{
+    display: flex;
+    width: 50vw;
+    height: 50vh;
+    background: yellow;
+    align-items: center;
+    justify-content: center;
 }
 
+#story_image_1{
+    background:url('../images/mountains.jpg');
+    background-size: cover;
+}
+
+#story_image_2{
+    background:url('../images/ocean_2.jpg');
+    background-size: cover;
+}
+
+#story_image_3{
+    background:url('../images/desert_2.jpg');
+    background-size: cover;
+}
+
+.summary{
+    padding: 10px;
+    display: grid;
+    width: 50vw;
+}
 
 /********************************/
 /********************************/
@@ -133,8 +151,8 @@
 
 #social_icons{
     display: flex;
+    border: 1px solid red;
     justify-content: space-evenly;
-
 }
 
 .fa {
@@ -191,6 +209,7 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
+
 
 .fa-heart{
     display: flex;
